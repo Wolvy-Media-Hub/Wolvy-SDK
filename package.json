@@ -1,0 +1,11 @@
+{
+  "name": "wolvy-sdk",
+  "private": true,
+  "description": "The files served at sdk.wolvy.net",
+  "type": "module",
+  "scripts": {
+    "release": "node scripts/release.mjs",
+    "check": "node scripts/release.mjs --check",
+    "deploy": "node scripts/release.mjs --check && npx wrangler deploy"
+  }
+}

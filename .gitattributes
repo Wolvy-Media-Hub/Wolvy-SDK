@@ -1,0 +1,4 @@
+# Keep LF line endings in every checkout, including on Windows. A published SDK file must stay
+# byte for byte the same (customers may pin it with an integrity hash), and a CRLF checkout
+# would change it.
+* text=auto eol=lf
