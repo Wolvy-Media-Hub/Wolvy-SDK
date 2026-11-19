@@ -1,0 +1,16 @@
+{
+  // Node's own resolution, from an ES module (.ts/.tsx here, since package.json says "type": "module")
+  // and from a CommonJS file (.cts).
+  "compilerOptions": {
+    "target": "es2020",
+    "lib": ["dom", "es2020"],
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "jsx": "react-jsx",
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": false,
+    "types": []
+  },
+  "files": ["player.ts", "player-react.tsx", "player-cjs.cts"]
+}
