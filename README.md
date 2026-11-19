@@ -90,17 +90,12 @@ it may only use `import * as X from '…';`, `import X from '…';`, `export fun
 
 ## Publish to npm
 
-Not done yet. Before the first publish:
+`@wolvy/player` 1.0.0 and `@wolvy/player-react` 1.0.0 were published on 2026-11-19 from `main`
+(`57a4456`), under the npm organisation `wolvy`, and tagged `player-v1.0.0` and
+`player-react-v1.0.0`. Publishing needs an account with publish rights in that organisation; npm
+asks for a browser approval (two-factor) on every publish.
 
-- The npm organisation (scope) `wolvy` must exist and the publishing account must be a member with
-  publish rights. On 2026-11-19 neither package name existed on the registry and no package was
-  published under `@wolvy`; whether someone else owns the organisation name was not checked (the
-  npm website refuses automated requests).
-- Each package's `repository` field points at this repository,
-  https://github.com/Wolvy-Media-Hub/Wolvy-SDK (public since 2026-11-19), with its folder in
-  `directory`. The release step refuses to publish a package whose `repository` says TODO.
-
-Then, from the repository root, after `npm install`, `npm test` and the deploy:
+For a new version, from the repository root, after `npm ci`, `npm test` and the deploy:
 
 ```sh
 npm publish --workspace packages/player          # @wolvy/player, first
