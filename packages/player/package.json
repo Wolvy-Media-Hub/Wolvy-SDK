@@ -1,0 +1,46 @@
+{
+  "name": "@wolvy/player",
+  "version": "1.0.0",
+  "description": "Control the Wolvy video player embedded on your page: play, pause, seek, speed, quality, captions, and events such as progress for course completion.",
+  "license": "Apache-2.0",
+  "author": "Wolvy (https://wolvy.net)",
+  "homepage": "https://docs.wolvy.net/player-api/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wolvy-Media-Hub/Wolvy-SDK.git",
+    "directory": "packages/player"
+  },
+  "keywords": [
+    "wolvy",
+    "video",
+    "player",
+    "drm",
+    "iframe",
+    "postmessage",
+    "embed"
+  ],
+  "type": "commonjs",
+  "main": "./wolvy-player.js",
+  "types": "./wolvy-player.d.ts",
+  "exports": {
+    ".": {
+      "types": "./wolvy-player.d.ts",
+      "default": "./wolvy-player.js"
+    },
+    "./wolvy-player.js": "./wolvy-player.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "wolvy-player.js",
+    "wolvy-player.d.ts"
+  ],
+  "sideEffects": [
+    "./wolvy-player.js"
+  ],
+  "scripts": {
+    "prepublishOnly": "node ../../scripts/release.mjs --publish"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

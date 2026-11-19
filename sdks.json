@@ -1,6 +1,10 @@
 {
   "player": {
     "version": "1.0.0",
-    "files": ["wolvy-player.js"]
+    "files": ["wolvy-player.js"],
+    "npm": {
+      "folder": "packages/player",
+      "extraFiles": ["wolvy-player.d.ts"]
+    }
   }
 }

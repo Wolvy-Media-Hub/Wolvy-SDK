@@ -1,0 +1,15 @@
+{
+  // A Vite / webpack / Next.js style project.
+  "compilerOptions": {
+    "target": "es2020",
+    "lib": ["dom", "es2020"],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "noEmit": true,
+    "skipLibCheck": false,
+    "types": []
+  },
+  "files": ["player.ts", "player-react.tsx", "script.ts"]
+}
